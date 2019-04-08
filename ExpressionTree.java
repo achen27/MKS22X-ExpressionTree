@@ -6,7 +6,7 @@ public class ExpressionTree{
     if (isValue()){
       return getValue() + "";
     }
-    return "(" + getLeft().toStringPostfix() + " " + getRight().toStringPostfix() + " " + getOp() + ")";
+    return "(" + getLeft().toStringPostfix() + " " + getOp() + " " + getRight().toStringPostfix() + ")";
   }
 
   /*return the expression as a postfix notation string without parenthesis*/
